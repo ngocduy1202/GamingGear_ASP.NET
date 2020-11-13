@@ -1,0 +1,86 @@
+﻿.container {
+    width: 100%;
+    display: inline-block;
+    padding-top: 2%;
+    background-color: #2d3436;
+    color: white;
+}
+
+.info-left {
+    float: left;
+
+    width: 47%;
+}
+
+.box {
+    box-shadow: 5px 5px 34px 13px #122;
+    border-radius: 9px 9px 9px 9px;
+}
+
+.left {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 20px;
+    margin-left: 1%;
+}
+
+.infor-user {
+    padding-bottom: 5%;
+}
+
+.infor-product {
+    background-color: #2D3441;
+    text-align: center;
+    padding-bottom: 5%;
+}
+
+.infor-details-product {
+    margin:0;
+
+    width: 49%;
+    margin-right: 1%;
+    float: right;
+    background-color: #333;
+    padding-bottom: 5%;
+    text-align: center;
+}
+
+span#ContentPlaceHolder1_DataList2_Label1_0 {
+    font-size: 40px;
+    display: inline-block;
+    width: 705px;
+    text-align: center;
+}
+
+.form1 {
+    display: inline-grid;
+    padding: 11% 0;
+}
+
+.tb {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid black;
+    width: 203%;
+    margin-bottom: 20%;
+    color: white;
+    padding-top: 10px;
+}
+
+.lb1 {
+    margin: 10px 30px 33px 91px;
+}
+.button-update-size {
+    padding: 7px 45px;
+}
+
+table#ContentPlaceHolder1_GridView1 {
+    width: 100%;
+}
+table#ContentPlaceHolder1_GridView2 {
+    width: 100%;
+}
+.css-location-btnUpdate {
+    margin-left: 68%;
+}
+

@@ -1,0 +1,17 @@
+﻿#main{
+    width:100%;
+    display:inline-block;
+    position:relative;
+}
+#left{
+    width:60%;
+    float:left;
+}
+#right{
+    width:40%;
+    float:left;
+}
+#Panel1{
+    background-color:coral;
+    border:5px solid blue;
+}

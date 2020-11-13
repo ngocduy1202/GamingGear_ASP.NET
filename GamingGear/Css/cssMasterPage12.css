@@ -1,0 +1,202 @@
+﻿html {
+    scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+body::-webkit-scrollbar-track {
+
+    display: none;
+}
+
+body::-webkit-scrollbar-thumb {
+
+    display: none;
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #2d3436;
+    color: white;
+    font-family: "montserrat";
+    z-index:100;
+    position: relative;
+}
+.logo{
+    text-decoration:none;
+    color:white;
+    font-size:40px;
+}
+
+#ContentPlaceHolder1 {
+    z-index:-100;
+}
+
+.all-body {
+    margin: 0;
+    padding: 0;
+    width: auto;
+    height: auto;
+}
+
+.top {
+    width: 90%;
+    margin-top: 10px;
+    border-bottom: 1px solid #ff7675;
+    margin-left: 5%;
+    background-color:none;
+    z-index:3;
+    position: relative;
+    display: inline-block;
+}
+.button-master {
+    width: 20%;
+    float: left;
+    position: relative;
+    height: 63px;
+    top: 0;
+
+}
+.shop-name {
+    margin-left: 2%;
+    width: 67%;
+    float: left;
+    margin-bottom:25px;
+}
+
+    .shop-name .btn3 {
+        float: right;
+        width: 30%;
+    }
+
+.account-button {
+    display: grid;
+    position: absolute;
+    z-index: 1;
+}
+table#DataList1 {
+    border-collapse: collapse;
+    height: 0px;
+    position: absolute;
+}
+.hove-button {
+    position: absolute;
+    height: 50px;
+    width: 141px;
+    z-index: 2;
+    overflow: hidden;
+    display: inline-block;
+}
+    .hove-button:hover {
+        height: 197px;
+        transition: 0.5s cubic-bezier(0.54, 0.31, 0, 0.85)
+    }
+span.btn.btn3.all-product-button {
+    top: -11px;
+    left: 85%;
+    position: absolute;
+}
+.master-login {
+    top: -2px;
+}
+
+.btn-btn {
+    border: none;
+    background-color: transparent;
+    color: white;
+    padding: 8px 20px;
+    min-width: 106px;
+}
+.btn {
+
+    margin-right: 10px;
+    overflow: hidden;
+    margin-right: 20px;
+}
+
+.btn3 {
+    margin-top: 2%;
+    left: 10%;
+    background-color: transparent;
+    border: 1px solid #ff7675;
+    position: relative;
+    display: inline-block;
+}
+
+.btn3::before {
+    background: #ff7675;
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    transition: all 1s ease;
+    width: 100%;
+    height: 0%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+    .btn3:hover::before {
+        height: 450%;
+    }
+    .btn3:hover {
+        border: none;   
+    }
+        .btn3:hover .btn-btn {
+            padding: 9px 21px;
+        }
+.button {
+    position: relative;
+}
+
+#menu-account {
+    position: absolute;
+    display: grid;
+    right: 173px;
+    top: 78px;
+    width: 128px;
+    z-index: 200;
+}
+
+span#DataList1_accountInfo_0 {
+    margin-top:16px;
+}
+
+
+.master-Allproduct {
+    top: -2px;
+    float: right;
+    margin-right: 35px;
+    position: relative;
+}
+
+.card-view {
+    z-index: 100;
+    position: fixed;
+    right: 0;
+    background: white;
+    width: 43px;
+    height: 43px;
+    border-radius: 100%;
+    top: 88%;
+    margin-right: 20px;
+    transform: translate(-50%, -50%);
+}
+    .card-view:hover {
+        width: 200px;
+    }
+
+.linkbutton-card-view {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: black;
+    margin-top: 8px;
+
+}

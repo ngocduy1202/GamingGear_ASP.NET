@@ -1,0 +1,20 @@
+﻿#footer {
+    z-index:3;
+    height: 175px;
+    width: 100%;
+    clear: both;
+    float: left;
+    text-align: center;
+    color: white;
+    background-color: #2d3436;
+    border-top: 1px solid #ff7675;
+    position: relative;
+    top: 0;
+}
+
+.Info {
+    width: calc(100%/3);
+    height: 100%;
+    float: left;
+    color: white;
+}

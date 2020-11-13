@@ -1,0 +1,115 @@
+﻿.background-product1 {
+    position: fixed;
+    margin: 0;
+    width: 2000px;
+    height: 1000px;
+    z-index: 2;
+    background: #555;
+    top: 0;
+}
+
+.background-product2 {
+    position: fixed;
+    margin-left: -26px;
+    margin-top: -1px;
+    width: 0;
+    top: 0;
+    z-index: 2;
+    height: 0;
+    border-top: 767px solid transparent;
+    border-right: 1743px solid #ff7675;
+    border-bottom: 0px solid transparent;
+}
+
+.left {
+    width: 10%;
+    position: absolute;
+    /* float: right; */
+    margin-top: 7%;
+    margin-left: 90%;
+    z-index: 3;
+    color: black;
+}
+
+li.product-kind {
+    margin-left: 32px;
+    margin-bottom: 15px;
+}
+
+.center {
+    min-height: 608px;
+    width: 100%;
+    z-index:2;
+    border-radius: 30px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    position: relative;
+    float: left;
+}
+
+
+
+.center-left {
+    position: relative;
+    top:60px;
+    text-align: -webkit-center;
+}
+
+.center-right {
+    color: white;
+    display: inline-block;
+    position: absolute;
+    margin-left: 3%;
+    width: 97%;
+    top: 80px;
+}
+
+.one-info {
+    margin-top: 28px;
+    font-size: 23px;
+}
+
+.button-detail {
+    margin-top: 145px;
+}
+
+.image-product {
+    height: 100%;
+    width: 100%;
+    margin-top: 4%;
+}
+
+.one-product-kind {
+    text-decoration: none;
+    color: black;
+}
+
+    .one-product-kind:hover {
+        color: white;
+    }
+
+.css-location-button-add {
+    border: 1px solid #ff7675 !important;
+}
+.button-add-size {
+    padding: 8px 50px;
+}
+.drop-down-list {
+    padding: 5px 10px;
+    background: #555;
+    border: 1px dashed white;
+    color: white;
+}
+
+.location-drop-down-list {
+    margin-top: 30px;
+    font-size: 25px;
+}
+
+.name-product {
+    top: -122px;
+    position: absolute;
+    width: 99%;
+    text-align: center;
+    font-size: 38px;
+}

@@ -1,0 +1,87 @@
+﻿.Card-form {
+    position: fixed;
+    top: 89%;
+    left: 96%;
+    transform: translate(-50%, -50%);
+    padding: 2px;
+    height: 40px;
+    border-radius: 40px;
+    padding: 2px;
+    color: black;
+    background-color: white;
+    z-index: 300;
+    width: 41px;
+    overflow: hidden;
+}
+
+        .Card-form:hover > .linkbutton-card {
+            background: white;
+            color: black;
+        }
+
+.linkbutton-card {
+    position: absolute;
+    color: #e84118;
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #2f3640;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+    color: white;
+    cursor: pointer;
+}
+
+    .linkbutton-card > i {
+        font-size: 30px;
+    }
+
+.lable-card {
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    color: black;
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 40px;
+    font-weight: bold;
+    position: absolute;
+    top: 0px;
+    z-index: 300;
+    display: inline-block;
+    margin-left: 50px;
+}
+
+
+.button-move-to-top {
+    position: fixed;
+    top: 82%;
+    left: 97%;
+    z-index: 300;
+    background-color: white;
+    border-radius: 80%;
+    font-size: 45px;
+    width: 40px;
+    height: 40px;
+}
+
+.move-to-top {
+    position: absolute;
+    color: #e84118;
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #2f3640;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+    color: white;
+    cursor: pointer;
+}

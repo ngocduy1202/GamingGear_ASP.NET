@@ -1,0 +1,184 @@
+﻿.container {
+    width: 80%;
+    margin-left: 10%;
+    text-align: center;
+    display: inline-block;
+    background-color: #2d3436;
+    color: white;
+    min-height: 640px;
+}
+
+.intro {
+    width: 100%;
+}
+
+.bill {
+    width: 100%;
+    border-top: 1px solid black;
+    float: left;
+}
+
+.outer {
+    margin-bottom: 50px;
+    margin-top: 66px;
+}
+
+.oneproduct {
+    width: 100%;
+    margin-bottom: 10px;
+    float: left;
+}
+
+.left {
+    height: 50px;
+    width: 500px;
+    float: left;
+}
+
+.right {
+    height: 50px;
+    width: 500px;
+    float: left;
+}
+
+.soluong {
+    height: 50px;
+    width: 200px;
+    float: left;
+}
+
+.dongia {
+    height: 50px;
+    width: 250px;
+    float: right;
+}
+
+.lbl2 {
+    height: auto;
+    width: auto;
+    border-bottom: 1px solid black;
+    float: right;
+    margin-right: 50px;
+}
+
+.payform {
+    float: left;
+    margin-top: 50px;
+    padding-bottom: 20px;
+    margin-bottom: 50px;
+    width: 100%;
+    border: 1px solid black;
+}
+
+.form1 {
+    height: 100%;
+    width: 100%;
+    float: left;
+    margin-top: 50px;
+}
+
+.rowone {
+    margin-left: 90px;
+    height: auto;
+    float: left;
+    width: 40%;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.rowtow {
+    margin-right: 90px;
+    height: auto;
+    float: right;
+    width: 40%;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.textbox {
+    border: none;
+    border-bottom: 1px solid black;
+    height: 30px;
+    width: 100%;
+    background-color: #2d3436;
+    color:white;
+}
+
+.rowthree {
+    margin-left: 90px;
+    clear: both;
+    width: 84%;
+    margin-top: 100px;
+}
+
+
+.btnbuy {
+    border: 1px solid black;
+    background: transparent;
+    padding: 5px 30px;
+}
+
+    .btnbuy:hover {
+        background-color: gainsboro;
+        border: none;
+    }
+
+.visible {
+    color: white;
+    background: transparent;
+}
+
+.btndelete {
+    border: none;
+    background: transparent;
+    border: 1px solid black;
+    outline: none;
+}
+
+.validator {
+    margin-top: 20px;
+}
+
+.onevalidator {
+    color: red;
+}
+
+.btnReturn {
+    float: right;
+}
+
+.gridview {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.imgBill {
+    height: 150px;
+    border-radius: 8px 8px 8px 8px;
+}
+
+.btnBill {
+    height: 30px;
+}
+
+.tbBill {
+    Height: 30px;
+    Width: 65px;
+}
+
+.button-return-size {
+    padding: 7px 37px;
+}
+
+.css-location-button-return {
+    margin-right: 65px;
+}
+
+.button-buy-now-size {
+    padding: 7px 40px;
+}
+
+.css-location-button-buy-now {
+    float: right;
+    margin-right: 40px;
+}

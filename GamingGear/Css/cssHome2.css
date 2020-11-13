@@ -1,0 +1,206 @@
+﻿.content-introduce {
+    width: 80%;
+    margin-left: 10%;
+    position: absolute;
+    z-index: 100;
+    top: 200px;
+}
+
+.sologan {
+    margin-left: 37%;
+    margin-top: 40px;
+}
+
+.shop-name-home {
+    text-align: center;
+    font-size: 35px;
+}
+
+.sologan-span {
+    position: absolute;
+    font-size: 30px;
+    font-family: Bebas Neue Pro SmE Rg;
+}
+
+.one-kind {
+    margin-top: 80px;
+    float: left;
+    height: 500px;
+    width: 100%;
+    margin-bottom: 30px;
+    box-shadow: 10px 10px 10px 10px #888888;
+    border-radius: 9px 9px 9px 9px;
+}
+
+.video {
+    display: inline-block;
+    width: 100%;
+}
+
+.myVideo {
+    position: relative;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: 1;
+    background-clip: border-box;
+}
+
+.btn-order-all {
+    background-color: transparent;
+    border: none;
+    color: white;
+    padding: 12px 58px;
+}
+    .btn-order-all:hover {
+        padding: 14px 60px;
+    }
+
+.span-btn {
+    display: inline-block;
+    position: relative;
+    border: 1px solid;
+    margin-top: 31%;
+    margin-left: 44%;
+}
+
+.product {
+    display: inline-block;
+    background-color: #13100E;
+    color: white;
+    margin-top:-4px;
+}
+
+    .product ul {
+        display: inline-block;
+    }
+
+        .product ul li {
+            display: block;
+            width: 50%;
+            float: left;
+        }
+
+    .product img {
+        width: 498px;
+    }
+
+    .product h1 {
+        font-size: 75px;
+        letter-spacing: 4px;
+        line-height: 95px !important;
+        font-family: 'Bebas Neue Pro SmE Rg';
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    .product p {
+        margin-top: 63px;
+        font-size: 22px;
+        line-height: 36px;
+        font-family: 'Gotham Book';
+        font-weight: normal;
+    }
+
+    .product .image {
+        position: relative;
+    }
+
+        .product .image #img4 {
+            position: absolute;
+            top: 336px;
+            right: 178px;
+            width: 160px;
+        }
+
+        .image #img5 {
+            position: absolute;
+            width: 33px;
+            bottom: 216px;
+            left: -359px;
+        }
+/*---------*/
+.product-head {
+    display: inline-block;
+    color: white;
+    position: relative;
+}
+
+    .product-head ul {
+        text-align: center;
+        display: inline-block;
+    }
+
+        .product-head ul li {
+            display: block;
+            width: 100%;
+            float: left;
+        }
+
+    .product-head img {
+        width: 498px;
+        margin-left: 33%;
+    }
+
+    .product-head h1 {
+        font-size: 75px;
+        letter-spacing: 4px;
+        line-height: 95px !important;
+        font-family: 'Bebas Neue Pro SmE Rg';
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    .product-head p {
+        font-size: 22px;
+        font-family: 'Gotham Book';
+        font-weight: normal;
+    }
+
+    .product-head .image {
+        height: 847px;
+        position: relative;
+    }
+
+.oval {
+    width: 76%;
+    height: 38%;
+    border: 2px solid #FECB00;
+    border-radius: 100%;
+    background-color: rgba(0, 255, 255, 0.02);
+    position: absolute;
+    top: 59%;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+}
+
+
+.oval-mid {
+    background-color: #FECB00;
+    height: 1px;
+    position: absolute;
+    top: 593px;
+    left: 182px;
+    width: 597px;
+}
+.content-3{
+    position:relative;
+}
+.img-content3 {
+    width: 100%;
+}
+span#order-mouse {
+    top: 45%;
+}
+
+span#order-keyboard {
+    top: 65%;
+    left: 28%;
+}
+
+span#order-monitor {
+    top: 27%;
+    left: 23%;
+}

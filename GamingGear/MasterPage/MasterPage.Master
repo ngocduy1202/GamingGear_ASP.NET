@@ -1,0 +1,191 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="GamingGear.MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link href="../Css/cssMasterPage12.css" rel="stylesheet" />
+    <link href="../Css/CssFooter4.css" rel="stylesheet" />
+    <link href="../Css/CssLogin-Regis4.css" rel="stylesheet" />
+    <link href="../Css/hoverButtonMain1.css" rel="stylesheet" />
+    <link href="../Css/CssCardAndMoveToTop1.css" rel="stylesheet" />
+    <script defer="" src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <link href="../Css/CssCardView.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="move-to-head">
+            <div class="all-body" id="head1">
+                <div class='top'>
+                    <div class='shop-name'>
+                        <strong><a href="home.aspx" class="logo">Gaming Gear</a></strong>
+                    </div>
+                    <div class='button-master'>
+                        <asp:DataList ID="DataList1" runat="server">
+                            <ItemTemplate>
+                                <span class="hove-button">
+                                    <span class="account-button">
+                                        <span id="account" class="btn btn3">
+                                            <asp:Button ID="btnAccount" OnClick="btnAccount_Click" CausesValidation="false" CssClass='btn-btn' runat="server" Text='<%#Eval("TENKH") %>' />
+                                        </span>
+                                        <span id="accountInfo" runat="server" class="btn btn3">
+                                            <asp:Button ID="btnAccountInfo" OnClick="btnAccountInfo_Click" CausesValidation="false" CssClass='btn-btn in-loggin' runat="server" Text="Account Info" CommandArgument='<%#Eval("TENDN") %>' />
+                                        </span>
+                                        <span id="history" runat="server" class="btn btn3">
+                                            <asp:Button ID="btnHistory" OnClick="btnHistory_Click" CssClass='btn-btn' CausesValidation="false" runat="server" Text="Bill History" CommandArgument='<%#Eval("TENDN") %>' />
+                                        </span>
+                                        <span id="logout" runat="server" class="btn btn3">
+                                            <asp:Button ID="btnLogout" OnClick="btnLogout_Click" CssClass='btn-btn' CausesValidation="false" runat="server" Text="Logout" />
+                                        </span>
+                                        <span id="AdminPage" runat="server" class="btn btn3">
+                                            <asp:Button ID="btnGoToAdminPage" OnClick="btnGoToAdminPage_Click" CssClass='btn-btn' CausesValidation="false" runat="server" Text="Go To Admin" />
+                                        </span>
+                                    </span>
+                                </span>
+                            </ItemTemplate>
+                        </asp:DataList>
+                        <span id="buttonLoginMaster" runat="server" class="btn btn3 master-login">
+                            <asp:Button ID="btnLoginMaster" OnClick="btnLoginMaster_Click" CausesValidation="false" CssClass='btn-btn' runat="server" Text="Login" />
+                        </span>
+                        <span class="btn btn3 master-Allproduct">
+                            <asp:Button ID="btnAllProduct" OnClick="btnAllProduct_Click" CausesValidation="false" CssClass='btn-btn' runat="server" Text="All Product" />
+                        </span>
+                    </div>
+                </div>
+
+                <asp:Panel ID="PanelLogin" class="panel-login" runat="server">
+                    <div class="box1">
+                        <h1 id="loginText">Login</h1>
+                        <div class="form">
+                            <label class="lbl">User name</label>
+                            <asp:TextBox CssClass="input-box" ID="tbUserName" runat="server"></asp:TextBox>
+                        </div>
+                        <div class="form">
+                            <label class="lbl">Password</label>
+                            <asp:TextBox CssClass="input-box" ID="tbPassword" runat="server" TextMode="Password"></asp:TextBox>
+
+                        </div>
+                        <div class="validation-login">
+                            <asp:Label CssClass="lbl1" ID="lbl" runat="server" Text=""></asp:Label>
+                            <br />
+                            <asp:RequiredFieldValidator ValidationGroup="Login" CssClass="lbl1" ID="RequiredFieldValidator1" runat="server" ErrorMessage="Bạn chưa nhập tên đăng nhập" ControlToValidate="tbUserName"></asp:RequiredFieldValidator>
+                            <br />
+                            <asp:RequiredFieldValidator ValidationGroup="Login" CssClass="lbl1" ID="RequiredFieldValidator2" runat="server" ErrorMessage="Bạn chưa nhập mật khẩu" ControlToValidate="tbPassword"></asp:RequiredFieldValidator>
+                        </div>
+                        <span class="button-login-form">
+                            <span id="buttonLogin" runat="server" class="btn btn3">
+                                <asp:Button ID="btnLogin" CssClass='btn-btn button' OnClick="btnLogin_Click" runat="server" Text="Login" ValidationGroup="Login" />
+                            </span>
+                            <span id="buttonRegis" runat="server" class="btn btn3">
+                                <asp:Button ID="btnRegister" CssClass='btn-btn button' OnClick="btnRegister_Click" runat="server" Text="Register" />
+                            </span>
+                            <span id="buttonExit" runat="server" class="btn btn3">
+                                <asp:Button ID="btnExitLogin" CssClass='btn-btn button' OnClick="btnExitLogin_Click" runat="server" ValidationGroup="abc" Text="Exit" />
+                            </span>
+                        </span>
+                    </div>
+                </asp:Panel>
+                <!--Login-->
+
+
+                <asp:Panel ID="PanelRegister" runat="server" class="panel-login">
+                    <div class="box1">
+                        <h1 id="h2InRegis">Register</h1>
+                        <div class="form">
+                            <label class="lbl">User name</label>
+                            <asp:TextBox CssClass="input-box" ID="tbUserNameRegis" runat="server"></asp:TextBox>
+
+                        </div>
+                        <div class="form">
+                            <label class="lbl">Password</label>
+                            <asp:TextBox CssClass="input-box" ID="tbPasswordRegis" runat="server" TextMode="Password"></asp:TextBox>
+
+                        </div>
+                        <div class="form">
+                            <label class="lbl">Re-password</label>
+                            <asp:TextBox CssClass="input-box" ID="tbRePassRegis" runat="server" TextMode="Password"></asp:TextBox>
+
+                        </div>
+                        <div class="form">
+                            <label class="lbl">Name</label>
+                            <asp:TextBox CssClass="input-box" ID="tbNameRegis" runat="server"></asp:TextBox>
+
+                        </div>
+                        <div class="form">
+                            <label class="lbl">Phone number</label>
+                            <asp:TextBox CssClass="input-box" ID="tbSDTRegis" runat="server"></asp:TextBox>
+
+                        </div>
+
+                        <div>
+                            <asp:Label CssClass="lbl1" ID="lblMessageRegis" runat="server" Text=""></asp:Label>
+                            <br />
+                            <div>
+                                <asp:RequiredFieldValidator CssClass="lbl1" ValidationGroup="Regis" ID="RequiredFieldValidator3" runat="server" ErrorMessage="Chưa nhập tên đăng nhập" ControlToValidate="tbUserNameRegis"></asp:RequiredFieldValidator>
+                                <br />
+                                <asp:RequiredFieldValidator CssClass="lbl1" ValidationGroup="Regis" ID="RequiredFieldValidator4" runat="server" ErrorMessage="Chưa nhập mật khẩu" ControlToValidate="tbPasswordRegis"></asp:RequiredFieldValidator>
+                                <br />
+                                <asp:RequiredFieldValidator CssClass="lbl1" ValidationGroup="Regis" ID="RequiredFieldValidator5" runat="server" ErrorMessage="Bạn chưa nhập tên" ControlToValidate="tbNameRegis"></asp:RequiredFieldValidator>
+                                <br />
+                                <asp:RequiredFieldValidator CssClass="lbl1" ValidationGroup="Regis" ID="RequiredFieldValidator6" runat="server" ErrorMessage="Bạn chưa nhập số điện thoại" ControlToValidate="tbSDTRegis"></asp:RequiredFieldValidator>
+                                <br />
+                                <asp:CompareValidator CssClass="lbl1" ValidationGroup="Regis" ID="CompareValidator1" runat="server" ErrorMessage="Mật khẩu không khớp" ControlToCompare="tbPasswordRegis" ControlToValidate="tbRePassRegis"></asp:CompareValidator>
+                            </div>
+                        </div>
+                        <span id="spanInRegis" class="button-login-form">
+                            <span runat="server" class="btn btn3 ">
+                                <asp:Button ID="btnRegis" CssClass='btn-btn button' OnClick="btnRegis_Click" runat="server" Text="Submit" ValidationGroup="Regis" />
+                            </span>
+                            <span runat="server" class="btn btn3 ">
+                                <asp:Button ID="btnExitRegis" CssClass='btn-btn button' OnClick="btnExitRegis_Click" runat="server" Text="Exit" ValidationGroup="abc" />
+                            </span>
+                        </span>
+                    </div>
+                </asp:Panel>
+            </div>
+            <!--Register-->
+
+            <div class="button-move-to-top">
+                <a href="#move-to-head" class="move-to-top"><i class="far fa-arrow-alt-circle-up"></i></a>
+            </div>
+            <div class="Card-form" id="card">
+                <asp:Label runat="server" CssClass="lable-card">bạn đã mua.....món</asp:Label>
+                <asp:LinkButton OnClick="lbCardView_Click" CssClass="linkbutton-card" ID="lbCardView" runat="server"><i class="fas fa-shopping-cart"></i></asp:LinkButton>
+            </div>
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+
+            <div id="footer">
+                <div class="Info">
+                    <h4>BÙI ĐỨC TÍN</h4>
+                    <a>Address:QuangNgai city - Vietnam</a>
+                    <br />
+                    <a>Student id: 2321122981</a>
+                    <br />
+                    <a>Email:Buiductinwork@gmail.com</a>
+                </div>
+                <div class="Info">
+                    <h4>ĐẶNG NGỌC DUY</h4>
+                    <a>Address: QuangBinh city - Vietnam</a>
+                    <br />
+                    <a>Student id: 2321120536</a>
+                    <br />
+                    <a>​Email: Duydang9902@gmail.com</a>
+                </div>
+                <div class="Info">
+                    <h4>NGUYỄN HOÀI SƠN</h4>
+                    <a>Address: GiaLai city - Vietnam </a>
+                    <br />
+                    <a>Student id: 2321118094</a>
+                    <br />
+                    <a>Email: Sonbin199915@gmail.com</a>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

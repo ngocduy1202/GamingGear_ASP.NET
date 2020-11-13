@@ -1,0 +1,49 @@
+﻿.span-btn {
+    margin-right: 10px;
+    overflow: hidden;
+}
+.btn-order-all {
+    border: none;
+    background-color: transparent;
+    color: white;
+    padding: 12px 58px;
+}
+
+.btn-order {
+    border: 1px solid #ff7675;
+    position: relative;
+    display: inline-block;
+}
+
+    .btn-order::before {
+        background: #ff7675;
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        z-index: -1;
+        transition: all 0.5s ease;
+        width: 100%;
+        height: 0%;
+        transform: translate(-50%, -50%) rotate(145deg);
+    }
+
+    .btn-order:hover::before {
+        height: 450%;
+    }
+
+    .btn-order:hover {
+        border: none;
+    }
+
+        .btn-oder:hover, .btn-order-all {
+            padding: 13px 59px;
+        }
+.btn-headphone {
+    margin: 0;
+    top: 32%;
+    left: 72%;
+    position: absolute;
+    z-index: 1;
+}
+

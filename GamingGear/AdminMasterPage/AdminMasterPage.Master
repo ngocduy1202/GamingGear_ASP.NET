@@ -1,0 +1,46 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AdminMasterPage.Master.cs" Inherits="GamingGear.AdminMasterPage.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link href="../Css/CssAdmin/CssAdminMasterPage1.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        
+            <div class="left-admin-box">
+                <div class="admin-box-size web-name">
+                    <asp:LinkButton CssClass="one-link-button link-button-web-name" ID="LinkButton5" runat="server">Gaming Gear</asp:LinkButton>
+                </div>
+                <div class="admin-box-size function">
+                    <span>Quản lý
+                    </span>
+                    <div class="link-button">
+                        <asp:LinkButton CssClass="one-link-button" ID="LinkButton1" runat="server" OnClick="LinkButton1_Click">Quản lý tài khoản</asp:LinkButton>
+                        <asp:LinkButton CssClass="one-link-button" ID="LinkButton2" runat="server" OnClick="LinkButton2_Click">Quản lý hàng</asp:LinkButton>
+                        <asp:LinkButton CssClass="one-link-button" ID="LinkButton3" runat="server" OnClick="LinkButton3_Click">Quản lý kho</asp:LinkButton>
+                        <asp:LinkButton CssClass="one-link-button" ID="LinkButton4" runat="server" OnClick="LinkButton4_Click">Thống kê</asp:LinkButton>
+                    </div>
+                </div>
+
+                <div class="admin-box-size admin-name">
+                    <asp:Label ID="lbl" runat="server" CssClass="label-admin" Text="ADMIN"></asp:Label>
+                    <asp:DataList ID="DataList1" runat="server">
+                        <ItemTemplate>
+                            <asp:LinkButton ID="lblAdminName" CssClass="one-link-button label-admin-name" OnClick="lblAdminName_Click" runat="server" Text='<%#Eval("TENKH") %>'></asp:LinkButton>
+                        </ItemTemplate>
+                    </asp:DataList>
+                </div>
+            </div>
+            <div class="right-admin-box">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        
+    </form>
+</body>
+</html>
